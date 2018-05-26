@@ -47,6 +47,12 @@ app.get('/about', (req,res) => {
     });
 });
 
+app.get('/projects', (req,res) => {
+    res.render('projects', {
+        pageTitle: 'Projects Page'
+    });
+});
+
 app.get('/bad', (req,res) => {
     res.send({
         Error: 'Error on this page'
